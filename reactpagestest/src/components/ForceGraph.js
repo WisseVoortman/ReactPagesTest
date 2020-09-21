@@ -1,15 +1,14 @@
 import * as d3 from 'd3'
 import React from 'react'
-import Test from './Test'
+
+var width = 600, height = 600
 
 class ForceGraph extends React.Component {
   constructor(props) {
     super();
-    var width = 600, height = 600
+
     var nodes = props.nodes
     var links = props.links
-
-    console.log(nodes)
 
     //simulation
     var simulation = d3.forceSimulation(nodes)
@@ -132,24 +131,16 @@ class ForceGraph extends React.Component {
   }
 
   render() {
+
     return <div id="content">
-      <svg width="700" height="600" style={{ border: "1px solid black" }}>
+      <svg width={width} height={height} style={{ border: "1px solid black" }}>
         <g class="links"></g>
         <g class="nodes"></g>
         <g class="labels"></g>
         <g class="linktext"></g>
       </svg>
-      <Test></Test>
     </div >;
   }
 }
 
 export default ForceGraph
-
-class Node extends React.Component {
-
-}
-
-class Link extends React.Component {
-
-}
