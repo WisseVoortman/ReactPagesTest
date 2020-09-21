@@ -4,12 +4,14 @@ import { combineReducers } from 'redux'
 
 import nodesReducer from './nodes'
 import linkesReducer from './links'
+import datasourceReducer from './datasource'
 
 //import connectionReducer from './connection'
 
 const appReducer = combineReducers({
   nodes: nodesReducer,
   links: linkesReducer,
+  datasource: datasourceReducer,
 })
 
 export default appReducer
