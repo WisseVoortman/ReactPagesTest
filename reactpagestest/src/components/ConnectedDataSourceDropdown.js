@@ -2,17 +2,18 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import DataSourceDropdown from './DataSourceDropdown'
+import { setCurrentDatasource } from '../redux/actions/index';
 
 
 const mapStateToProps = (state, props) => {
   return {
-    datasource: state.datasource,
-    nodes: state.nodes
+    datasource: state.datasource
+
   }
 }
 
 const mapDispatchToProps = (dispatch, props) =>
-  bindActionCreators({}, dispatch)
+  bindActionCreators({ setCurrentDatasource }, dispatch)
 
 const ConnectedDataSourceDropdown = connect(mapStateToProps, mapDispatchToProps)(DataSourceDropdown)
 

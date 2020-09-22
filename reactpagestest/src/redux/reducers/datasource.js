@@ -1,28 +1,36 @@
 import { SET_CURRENT_DATASOURCE } from '../actionTypes';
 
 
-export default function datasourceReducer(state = [
-  {
-    name: 'Onderwijsregistratie',
-    endpoint: 'http://localhost:8080/rdf4j-workbench/repositories/rio/query',
-  }
-], action) {
+export default function datasourceReducer(state = {
+  currentDatasource: 0,
+  datasources: [
+    {
+      name: 'Onderwijsregistratie',
+      endpoint: 'http://localhost:8080/rdf4j-workbench/repositories/rio/query',
+    },
+    {
+      name: 'Basisregistraties',
+      endpoint: 'https://data.pdok.nl/sparql',
+    },
+    {
+      name: 'Onderwijsinspectie',
+      endpoint: 'http://localhost:8080/rdf4j-workbench/repositories/ivho/query',
+    },
+    {
+      name: 'Kennisnet',
+      endpoint: 'http://localhost:8080/rdf4j-workbench/repositories/kennisnet/query',
+    },
+  ],
+}, action) {
+  let newState = Object.assign({}, state);
   switch (action.type) {
-    //   case CREATE_POST: {
-    //     const { type, ...post } = action
-    //     return [...state, post]
-    //   }
-
-    //   case EDIT_POST: {
-    //     const { type, id, ...newPost } = action
-    //     return state.map((oldPost, index) =>
-    //       action.id === index
-    //         ? { ...oldPost, ...newPost }
-    //         : oldPost
-    //     )
-    //   }
+    case SET_CURRENT_DATASOURCE: {
+      newState.currentDatasource = action.datasource;
+      return newState;
+    }
 
     default:
       return state
   }
 }
+

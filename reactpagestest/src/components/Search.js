@@ -8,7 +8,7 @@ class Search extends React.Component {
   }
   render() {
 
-    return <p>ditdus</p>
+    return <p>dit dus</p>
 
   }
 }

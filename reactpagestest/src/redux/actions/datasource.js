@@ -1,7 +1,8 @@
 import { SET_CURRENT_DATASOURCE } from '../actionTypes'
 
-export const setCurrentDatasource = (currentDatasource) => ({
-  type: SET_CURRENT_DATASOURCE,
-  currentDatasource,
-});
-
+export const setCurrentDatasource = (datasource) => {
+  return {
+    type: SET_CURRENT_DATASOURCE,
+    datasource
+  }
+}
