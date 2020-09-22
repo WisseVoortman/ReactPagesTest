@@ -6,8 +6,20 @@ import ConnectedDataSourceDropdown from './components/ConnectedDataSourceDropdow
 
 import { Provider } from 'react-redux'
 
+//devtools
+import DevTools from './containers/DevTools.jsx'
+
 // create Redux store
-import store from './redux/store'
+import configureStore from './redux/store/index'
+
+const store = configureStore()
+const initialState = store.getState()
+
+console.log('initializing store: ', store.getState())
+
+const unsubscribe = store.subscribe(() => {
+  //console.log('state changed: ', store.getState())
+})
 
 const App = () => (
   <Provider store={store}>
@@ -19,7 +31,8 @@ const App = () => (
         <ConnectedSearch />
         <ConnectedDataSourceDropdown />
         <ConnectedForceGraph />
-
+        {/* exclude devtools in production */}
+        {(process.env.NODE_ENV !== 'production') && <DevTools />}
       </section>
     </div>
   </Provider>

@@ -20,7 +20,7 @@ class DataSourceDropdown extends React.Component {
         <div className="dropdown show">
           <button className="btn btn-secondary dropdown-toggle"
             id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Specificeer bron {this.props.datasource.currentDatasource.name}</button>
+            aria-expanded="false">Specificeer bron: {this.props.datasource.currentDatasource.name}</button>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
             {
               this.props.datasource.datasources.map((item, key) =>
@@ -39,6 +39,3 @@ class DataSourceDropdown extends React.Component {
 }
 
 export default DataSourceDropdown
-
-//return (<p>{this.currentDatasource[0].name}</p>)
-

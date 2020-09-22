@@ -8,7 +8,7 @@ import datasourceReducer from './datasource'
 
 //import connectionReducer from './connection'
 
-const appReducer = combineReducers({
+const appReducer = (history) => combineReducers({
   nodes: nodesReducer,
   links: linkesReducer,
   datasource: datasourceReducer,
