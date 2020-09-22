@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import Search from './Search'
+import { fetchTest } from '../redux/actions/index'
 
 
 const mapStateToProps = (state, props) => {
@@ -12,7 +13,7 @@ const mapStateToProps = (state, props) => {
 }
 
 const mapDispatchToProps = (dispatch, props) =>
-  bindActionCreators({}, dispatch)
+  bindActionCreators({ fetchTest }, dispatch)
 
 const ConnectedSearch = connect(mapStateToProps, mapDispatchToProps)(Search)
 

@@ -8,7 +8,13 @@ class Search extends React.Component {
   }
   render() {
 
-    return <p>dit dus</p>
+    return (
+      <div>
+        <p>dit dus</p>
+        <button onClick={this.props.fetchTest}></button>
+      </div>
+
+    )
 
   }
 }
