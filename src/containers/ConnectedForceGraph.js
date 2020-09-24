@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import ForceGraph from './ForceGraph'
+import ForceGraph from '../components/ForceGraph'
 
 
 const mapStateToProps = (state, props) => {

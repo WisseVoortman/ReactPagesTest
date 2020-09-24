@@ -7,13 +7,14 @@ import linkesReducer from './links'
 import datasourceReducer from './datasource'
 import testReducer from './test'
 
-//import connectionReducer from './connection'
+import { connectRouter } from 'connected-react-router'
 
 const appReducer = (history) => combineReducers({
   nodes: nodesReducer,
   links: linkesReducer,
   datasource: datasourceReducer,
   test: testReducer,
+  router: connectRouter(history)
 })
 
 export default appReducer

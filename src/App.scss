@@ -43,3 +43,55 @@ text {
   fill: #666;
   font-size: 16px;
 }
+
+.active{
+   // color: green;
+   // background-color: red;
+   border-bottom: 3px solid red;
+   font-weight: bold;
+}
+
+.nav-link{
+   
+}
+
+.navbar-toggler{
+   border-bottom: none;
+}
+  
+.nav-link:hover {
+  border-bottom: 3px solid red;
+  //font-weight: bold;
+}
+
+.navbar{
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   background-color: white;
+   box-shadow: 0 0 15px ;   
+}
+
+.dropdown-item.active{
+   background-color: white;
+   color: black;
+}
+
+.PageContent{
+   padding-top: 50px;
+   min-height: 100vh;
+}
+
+.Footer{
+   background-color: #222222;
+   color: white;
+   text-align: center;
+}
+
+.textarea{
+   min-width: 100%;
+
+   min-height: 300px;
+   background-color: red;
+}

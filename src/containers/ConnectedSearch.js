@@ -1,19 +1,21 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import Search from './Search'
-import { fetchTest } from '../redux/actions/index'
+import Search from '../components/Search'
+import { fetchTest, fetchSPARQL, sparql } from '../redux/actions/index'
 
 
 const mapStateToProps = (state, props) => {
   return {
     nodes: state.nodes,
-    links: state.links
+    links: state.links,
+    datasource: state.datasource
+
   }
 }
 
 const mapDispatchToProps = (dispatch, props) =>
-  bindActionCreators({ fetchTest }, dispatch)
+  bindActionCreators({ fetchTest, fetchSPARQL, sparql, }, dispatch)
 
 const ConnectedSearch = connect(mapStateToProps, mapDispatchToProps)(Search)
 

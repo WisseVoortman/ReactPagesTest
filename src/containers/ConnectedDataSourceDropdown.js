@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import DataSourceDropdown from './DataSourceDropdown'
+import DataSourceDropdown from '../components/DataSourceDropdown'
 import { setCurrentDatasource } from '../redux/actions/index';
 
 

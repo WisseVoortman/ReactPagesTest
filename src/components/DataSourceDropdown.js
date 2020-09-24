@@ -9,9 +9,6 @@ const Datasource = (props) => (
 class DataSourceDropdown extends React.Component {
   constructor(props) {
     super();
-    var datasource = props.datasource
-    console.log(props.datasource)
-
   }
   render() {
     return (
@@ -21,7 +18,7 @@ class DataSourceDropdown extends React.Component {
           <button className="btn btn-secondary dropdown-toggle"
             id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Specificeer bron: {this.props.datasource.currentDatasource.name}</button>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <div className="" aria-labelledby="dropdownMenuLink">
             {
               this.props.datasource.datasources.map((item, key) =>
                 <Datasource

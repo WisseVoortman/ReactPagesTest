@@ -16,7 +16,7 @@ import DevTools from '../../containers/DevTools'
 const enhancer = compose(
   middleware,
   DevTools.instrument(),
-  //persistState(getSessionKey())
+  persistState(getSessionKey())
 )
 
 function getSessionKey() {
