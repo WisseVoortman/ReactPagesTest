@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfa9b229.chunk.css",
-    "main.js": "/static/js/main.edc42aee.chunk.js",
-    "main.js.map": "/static/js/main.edc42aee.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7b3ff945.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7b3ff945.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.bd743029.chunk.js": "/static/js/2.bd743029.chunk.js",
-    "static/js/2.bd743029.chunk.js.map": "/static/js/2.bd743029.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.3e4b6f3bced6575d9e29bcd82c8fc6b2.js": "/precache-manifest.3e4b6f3bced6575d9e29bcd82c8fc6b2.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.cfa9b229.chunk.css.map": "/static/css/main.cfa9b229.chunk.css.map",
-    "static/js/2.bd743029.chunk.js.LICENSE.txt": "/static/js/2.bd743029.chunk.js.LICENSE.txt"
+    "main.css": "/reactpagestest/static/css/main.cfa9b229.chunk.css",
+    "main.js": "/reactpagestest/static/js/main.aea4dfab.chunk.js",
+    "main.js.map": "/reactpagestest/static/js/main.aea4dfab.chunk.js.map",
+    "runtime-main.js": "/reactpagestest/static/js/runtime-main.5cf1c82e.js",
+    "runtime-main.js.map": "/reactpagestest/static/js/runtime-main.5cf1c82e.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/reactpagestest/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.bd743029.chunk.js": "/reactpagestest/static/js/2.bd743029.chunk.js",
+    "static/js/2.bd743029.chunk.js.map": "/reactpagestest/static/js/2.bd743029.chunk.js.map",
+    "index.html": "/reactpagestest/index.html",
+    "precache-manifest.ac4c684f49e6196e30716d396628565a.js": "/reactpagestest/precache-manifest.ac4c684f49e6196e30716d396628565a.js",
+    "service-worker.js": "/reactpagestest/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/reactpagestest/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.cfa9b229.chunk.css.map": "/reactpagestest/static/css/main.cfa9b229.chunk.css.map",
+    "static/js/2.bd743029.chunk.js.LICENSE.txt": "/reactpagestest/static/js/2.bd743029.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b3ff945.js",
+    "static/js/runtime-main.5cf1c82e.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.bd743029.chunk.js",
     "static/css/main.cfa9b229.chunk.css",
-    "static/js/main.edc42aee.chunk.js"
+    "static/js/main.aea4dfab.chunk.js"
   ]
 }
